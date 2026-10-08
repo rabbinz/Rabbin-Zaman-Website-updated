@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rabbin Zaman Portfolio</title>
+<meta name="description" content="Rabbin Zaman — undergraduate marketing student. Eight chapters on strategy, execution, growth, and the life around the work, set against Dhaka.">
+<meta name="theme-color" content="#0b0f14">
+<link rel="canonical" href="https://rabbinz.com.bd/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="Rabbin Zaman">
+
+<!-- Structured data: tells search engines who and what this site is -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://rabbinz.com.bd/#website",
+      "url": "https://rabbinz.com.bd/",
+      "name": "Rabbin Zaman Portfolio",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://rabbinz.com.bd/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://rabbinz.com.bd/#person",
+      "name": "Rabbin Zaman",
+      "url": "https://rabbinz.com.bd/",
+      "image": "https://rabbinz.com.bd/images/og-preview.jpg",
+      "description": "BBA Marketing undergraduate at Siddheswari College, founder of Mango Bangladesh, and educator at Nexus Coaching Center in Dhaka, Bangladesh.",
+      "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "BD" },
+      "sameAs": [
+        "https://www.linkedin.com/in/rabbin-zaman/",
+        "https://www.instagram.com/_rabbinz/",
+        "https://x.com/_rabbinz",
+        "https://www.facebook.com/rabbinzaman.13.08"
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Share preview: Open Graph (Facebook, WhatsApp, LinkedIn, Messenger) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rabbin Zaman">
+<meta property="og:title" content="Rabbin Zaman Portfolio">
+<meta property="og:description" content="Rabbin Zaman — undergraduate marketing student. Eight chapters on strategy, execution, growth, and the life around the work, set against Dhaka.">
+<meta property="og:url" content="https://rabbinz.com.bd/">
+<meta property="og:image" content="https://rabbinz.com.bd/images/og-preview.jpg">
+<meta property="og:image:secure_url" content="https://rabbinz.com.bd/images/og-preview.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rabbin Zaman standing with his back turned, looking out over a foggy field.">
+<meta property="og:locale" content="en_US">
+
+<!-- Share preview: Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rabbin Zaman Portfolio">
+<meta name="twitter:description" content="Rabbin Zaman — undergraduate marketing student. Eight chapters on strategy, execution, growth, and the life around the work, set against Dhaka.">
+<meta name="twitter:image" content="https://rabbinz.com.bd/images/og-preview.jpg">
+<meta name="twitter:image:alt" content="Rabbin Zaman standing with his back turned, looking out over a foggy field.">
+
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="images/Rabbin Zaman 01.jpg" fetchpriority="high">
+<link rel="preload" href="style.css" as="style">
+<link rel="stylesheet" href="style.css">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@300;400;500;600&family=Noto+Serif+Bengali:wght@400;500&family=Noto+Sans+Bengali:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@300;400;500;600&family=Noto+Serif+Bengali:wght@400;500&family=Noto+Sans+Bengali:wght@300;400;500&display=swap"></noscript>
+<noscript><style>.chapter,.bridge{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+
+  <!-- custom cursor (desktop / fine-pointer only, see script) -->
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <div class="mark">Rabbin Zaman</div>
+
+  <button class="chapter-menu-toggle" id="chapterMenuToggle" type="button" aria-label="Open chapter navigation" aria-expanded="false" aria-controls="chapterNav">
+    <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+  </button>
+
+  <nav class="chapter-nav" id="chapterNav" aria-label="Chapter navigation">
+    <a href="#entrance" data-target="entrance"><span class="dot"></span><span class="rn">I —</span> <span>Entrance</span></a>
+    <a href="#narrative" data-target="narrative"><span class="dot"></span><span class="rn">II —</span> <span>Narrative</span></a>
+    <a href="#execution" data-target="execution"><span class="dot"></span><span class="rn">III —</span> <span>Execution</span></a>
+    <a href="#weaponry" data-target="weaponry"><span class="dot"></span><span class="rn">IV —</span> <span>Weaponry</span></a>
+    <a href="#record" data-target="record"><span class="dot"></span><span class="rn">V —</span> <span>Track Record</span></a>
+    <a href="#journal" data-target="journal"><span class="dot"></span><span class="rn">VI —</span> <span>Journal</span></a>
+    <a href="#wisdom" data-target="wisdom"><span class="dot"></span><span class="rn">VII —</span> <span>Wisdom</span></a>
+    <a href="#bridge" data-target="bridge"><span class="dot"></span><span class="rn">VIII —</span> <span>Bridge</span></a>
+  </nav>
+
+  <!-- ============ CHAPTER I — THE ENTRANCE ============ -->
+  <header class="hero" id="entrance">
+    <div class="hero-photo-wrap" id="heroPhotoWrap">
+      <img width="2000" height="1279" class="hero-photo" src="images/Rabbin Zaman 01.jpg" alt="Rabbin Zaman standing with his back turned, looking out over a foggy field." fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero-scrim"></div>
+
+    <div class="hero-inner">
+      <p class="hero-eyebrow">A PORTFOLIO IN EIGHT CHAPTERS</p>
+      <h1 class="hero-title">Rabbin<br><em>Zaman</em></h1>
+      <p class="hero-sub">BBA Marketing undergraduate at Siddheswari College, founder of Mango Bangladesh, and educator at Nexus Coaching Center — building practical experience in selling, communication, and growth.</p>
+      <div class="hero-loc"><span class="line"></span><span>DHAKA, BANGLADESH</span></div>
+    </div>
+
+    <div class="scroll-cue">SCROLL TO BEGIN</div>
+  </header>
+
+  <main class="wrap">
+    <!-- ============ CHAPTER II — THE NARRATIVE ARC ============ -->
+    <section class="chapter" id="narrative">
+      <div class="chapter-head">
+        <span class="chapter-num">II</span>
+        <span class="chapter-label">THE NARRATIVE ARC</span>
+      </div>
+      <div class="chapter-grid">
+        <div class="chapter-media tilt" style="position:relative;">
+          <div class="media-frame">
+            <img width="1600" height="2133" src="images/Rabbin Zaman 02.jpg" alt="Rabbin Zaman in a thoughtful pose, hand resting near his chin." loading="lazy" decoding="async">
+          </div>
+          <div class="accent" style="right:-8%; bottom:-10%;">
+            <img width="900" height="1200" src="images/Rabbin Zaman 03.jpg" alt="Rabbin Zaman seated outdoors, looking off to the side." loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="chapter-text">
+          <h2 class="chapter-title">Curious first, strategic always</h2>
+          <p>I study Marketing at Siddheswari College under the National University, with a focus on consumer behaviour and market research.</p>
+          <p>My learning runs alongside real responsibility: I founded Mango Bangladesh to sell seasonal fruit in Dhaka, and I teach more than 65 students at Nexus Coaching Center.</p>
+          <p>Those experiences keep my perspective practical — listen carefully, communicate clearly, and build trust through every interaction.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHAPTER III — THE EXECUTION & PROOF ============ -->
+    <section class="chapter reverse" id="execution">
+      <div class="chapter-head">
+        <span class="chapter-num">III</span>
+        <span class="chapter-label">THE EXECUTION &amp; PROOF</span>
+      </div>
+      <div class="chapter-grid">
+        <div class="chapter-text">
+          <h2 class="chapter-title">Ideas earn their keep on delivery</h2>
+          <p>At Mango Bangladesh, I manage the full customer journey myself — sourcing, pricing, promotion, orders, delivery, and support across Facebook, Instagram, and direct sales.</p>
+          <p>In three weeks, the business completed 15+ orders, generated more than BDT 25,000 in sales, earned BDT 5,000+ in profit, and retained 5–8 repeat customers.</p>
+          <p style="color:var(--muted); font-size:13.5px; font-style:italic;">— practical selling, communication, and business development experience.</p>
+        </div>
+        <div class="chapter-media tilt">
+          <div class="media-frame">
+            <img width="1024" height="1536" src="images/Rabbin Zaman 04.jpg" alt="A dramatic black and white portrait of Rabbin Zaman seated with a horse." loading="lazy" decoding="async">
+          </div>
+          <div class="media-caption">
+            <span>Discipline, framed</span>
+            <span>Dhaka</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHAPTER IV — THE WEAPONRY & COMPETENCIES ============ -->
+    <section class="chapter" id="weaponry">
+      <div class="chapter-head">
+        <span class="chapter-num">IV</span>
+        <span class="chapter-label">THE WEAPONRY &amp; COMPETENCIES</span>
+      </div>
+      <div class="chapter-grid">
+        <div class="chapter-media tilt" style="position:relative;">
+          <div class="media-frame">
+            <img width="960" height="1280" src="images/Rabbin Zaman 05.jpg" alt="Rabbin Zaman lining up a shot at a billiards table." loading="lazy" decoding="async">
+          </div>
+          <div class="accent competencies-accent" style="left:2%; bottom:-12%;">
+            <img width="900" height="1185" src="images/Rabbin Zaman 06.jpg" alt="Portrait of Rabbin Zaman against a dark background." loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="chapter-text">
+          <h2 class="chapter-title">The tools, sharpened on purpose</h2>
+          <p>My toolkit combines marketing fundamentals with the practical skills needed to move an idea from conversation to customer — clearly, carefully, and with purpose.</p>
+          <ul class="tag-list">
+            <li>Consumer Behaviour</li>
+            <li>Market Research</li>
+            <li>Social Media Selling</li>
+            <li>Customer Communication</li>
+            <li>Pricing &amp; Order Management</li>
+            <li>Facebook / Meta Business</li>
+            <li>Microsoft Word</li>
+            <li>PowerPoint</li>
+            <li>Excel &amp; Analytics</li>
+            <li>English Presentations</li>
+            <li>Mentoring &amp; Assessment</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHAPTER V — THE TRACK RECORD ============ -->
+    <section class="chapter reverse" id="record">
+      <div class="chapter-head">
+        <span class="chapter-num">V</span>
+        <span class="chapter-label">THE TRACK RECORD</span>
+      </div>
+      <div class="chapter-grid">
+        <div class="chapter-text">
+          <h2 class="chapter-title">Where the time has gone</h2>
+          <ul class="record-list">
+            <li>
+              <span class="record-year">2026 — Now</span>
+              <div class="record-body">
+                <h4>Founder — Mango Bangladesh</h4>
+                <p>Running a seasonal-fruit business in Dhaka, handling sourcing, pricing, promotion, orders, delivery, and customer support.</p>
+              </div>
+            </li>
+            <li>
+              <span class="record-year">2025 — Now</span>
+              <div class="record-body">
+                <h4>Senior Teacher — Nexus Coaching Center</h4>
+                <p>Teaching 65+ students, preparing assessments, tracking progress, communicating with guardians, and mentoring learners.</p>
+              </div>
+            </li>
+            <li>
+              <span class="record-year">2024 — 2028</span>
+              <div class="record-body">
+                <h4>BBA — Major in Marketing</h4>
+                <p>Studying at Siddheswari College, National University, with relevant coursework in Consumer Behavior and Market Research.</p>
+              </div>
+            </li>
+          </ul>
+
+          <a class="cv-btn" id="cvButton" href="assets/Md_Rabbinzzaman_CV.pdf" download="Md_Rabbinzzaman_CV.pdf">
+            <span class="cv-btn-icon" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V15M12 15L7 10M12 15L17 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17V19C4 20.1046 4.89543 21 6 21H18C19.1046 21 20 20.1046 20 19V17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span>Download CV / Résumé</span>
+          </a>
+
+          <p style="color:var(--muted); font-size:13.5px; font-style:italic; margin-top:22px;">— certifications include NSDA Food and Beverage Production, Level 3, plus training in presentation, communication, Microsoft Office, money management, and phonetics.</p>
+        </div>
+        <div class="chapter-media tilt" style="position:relative;">
+          <div class="media-frame">
+            <img width="768" height="1152" src="images/Rabbin Zaman Edu.opt.jpg" alt="A portrait of Rabbin Zaman in traditional attire holding books in an ornate hall." loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- ============ CHAPTER VI — THE VISUAL JOURNAL ============ -->
+
+  <section class="gallery-section" id="journal" aria-labelledby="journalTitle">
+    <div class="gallery-head">
+      <div>
+        <span class="chapter-num">VI</span>
+        <span class="chapter-label">THE VISUAL JOURNAL</span>
+      </div>
+      <h2 class="gallery-title" id="journalTitle">The life around the work</h2>
+      <p class="gallery-intro">A portfolio is not only what gets built. It is also the places, people, and quiet seasons that shape the person doing the building.</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </section>
+
+
+  <!-- ============ CHAPTER VII — WISDOM ============ -->
+  <section class="chapter wisdom" id="wisdom" aria-labelledby="wisdomTitle">
+    <div class="wrap">
+      <div class="chapter-head">
+        <span class="chapter-num">VII</span>
+        <span class="chapter-label">WISDOM &mdash; THE PHILOSOPHY SECTION</span>
+      </div>
+      <h2 class="wisdom-title" id="wisdomTitle">Wisdom</h2>
+      <p class="wisdom-intro">Reflections on the self, the soul, and the long way back.</p>
+
+      <article class="wisdom-post">
+        <div class="chapter-media tilt">
+          <div class="media-frame">
+            <img width="735" height="945" src="images/wisdom/wisdom-01.jpg" alt="A weathered old man with a white beard looking downward, painted in dark, dramatic light." loading="lazy" decoding="async">
+          </div>
+          <div class="media-caption"><span>Reflection</span><span>01</span></div>
+        </div>
+        <div class="wisdom-body">
+          <span class="wisdom-no">01</span>
+          <blockquote class="wisdom-quote" lang="bn">
+            <p>আমি জন্মেছিলাম ফুলের ন্যায় পবিত্র অন্তর নিয়ে, সে অন্তর দূষিত হয়েছে শয়তানের ধোকা ও নফসের কুমন্ত্রণায় পড়ে।</p>
+          </blockquote>
+        </div>
+      </article>
+
+      <article class="wisdom-post flip">
+        <div class="chapter-media tilt">
+          <div class="media-frame">
+            <img width="1254" height="1254" src="images/wisdom/wisdom-02.webp" alt="Echoes from the Threshold — a man standing at the edge of rough waves under a stormy dusk sky." loading="lazy" decoding="async">
+          </div>
+          <div class="media-caption"><span>Echoes from the Threshold</span><span>02</span></div>
+        </div>
+        <div class="wisdom-body">
+          <span class="wisdom-no">02</span>
+          <blockquote class="wisdom-quote" lang="bn">
+            <p>সামনে তাকালে দেখি সবই অসম্ভব,<br>পেছনে তাকালে দেখি, যা করে এসেছি সব অসম্ভবই ছিল।</p>
+          </blockquote>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CHAPTER VIII — THE BRIDGE ============ -->
+  <section class="bridge" id="bridge">
+    <img width="1600" height="2133" class="bridge-photo" src="images/Rabbin Zaman 09.opt.jpg" alt="Rabbin Zaman looking out at the sea at dusk." loading="lazy" decoding="async">
+    <div class="bridge-scrim"></div>
+    <div class="bridge-inner">
+      <p class="bridge-eyebrow">VIII — THE BRIDGE</p>
+      <h2 class="bridge-title">The next chapter starts with a message.</h2>
+      <div class="contact-row">
+        <a class="primary contact-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=rabbin1122@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email Rabbin Zaman">
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5h17v11h-17z"/><path d="m4 7 8 6 8-6"/></svg>
+          <span>Email — rabbin1122@gmail.com</span>
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/rabbin-zaman/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9v9M6 6.2v.1M10 18v-5a3 3 0 0 1 6 0v5M10 10v8"/><rect x="3.5" y="3.5" width="17" height="17" rx="2"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="contact-link" href="https://www.instagram.com/_rabbinz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.8" r="1"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a class="contact-link" href="https://x.com/_rabbinz" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5 19 19.5M19 4.5 5 19.5"/></svg>
+          <span>X / Twitter</span>
+        </a>
+        <a class="contact-link" href="https://www.facebook.com/rabbinzaman.13.08" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 20v-7h2.4l.4-3h-2.8V8.1c0-.9.3-1.5 1.6-1.5h1.7V4a18 18 0 0 0-2.4-.2c-2.4 0-4 1.5-4 4.1V10H8v3h2.4v7z"/></svg>
+          <span>Facebook</span>
+        </a>
+      </div>
+      <div class="foot">
+        <span>© <span id="year"></span> Rabbin Zaman</span>
+        <span>Dhaka, Bangladesh</span>
+      </div>
+    </div>
+  </section>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image viewer">×</button>
+    <button class="lightbox-control lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous image">←</button>
+    <figure class="lightbox-figure">
+      <img width="768" height="1052" id="lightboxImage" src="images/gallery/Rabbin Zaman 10.jpg" alt="At the edge of the water">
+      <figcaption id="lightboxCaption"></figcaption>
+      <p class="lightbox-story" id="lightboxStory" hidden></p>
+    </figure>
+    <button class="lightbox-control lightbox-next" id="lightboxNext" type="button" aria-label="Next image">→</button>
+  </div>
+
+  <script>
+    /* Journal photos. Add, remove or rename entries here. No rebuild needed. */
+    const galleryImages = [
+      { file: 'Rabbin Zaman 10.jpg', label: 'At the edge of the water', story: '' },
+      { file: 'Rabbin Zaman 11.opt.jpg', label: 'A frame between worlds', story: '' },
+      { file: 'Rabbin Zaman 12.jpg', label: 'History in brick', story: '' },
+      { file: 'Rabbin Zaman 13.jpg', label: 'Green horizons', story: '' },
+      { file: 'Rabbin Zaman 14.jpg', label: 'A day by the sea', story: '' },
+      { file: 'Rabbin Zaman 15.jpg', label: 'The same shore, another mood', story: '' },
+      { file: 'Rabbin Zaman 16.jpg', label: 'Stillness at dusk', story: '' },
+      { file: 'Rabbin Zaman 17.jpg', label: 'Strength in progress', story: '' },
+      { file: 'Rabbin Zaman 18.jpg', label: 'Training the discipline', story: '' },
+      { file: 'Rabbin Zaman 19.jpg', label: 'The quiet road home', story: '' },
+      { file: 'Rabbin Zaman 20.jpg', label: 'A closer look', story: '' },
+      { file: 'Rabbin Zaman 21.jpg', label: 'On two wheels', story: '' },
+      { file: 'Rabbin Zaman 22.jpg', label: 'A study in blue', story: '' },
+      { file: 'Rabbin Zaman 23.jpg', label: 'Colour and character', story: '' },
+      { file: 'Rabbin Zaman 24.jpg', label: 'A softened horizon', story: '' },
+      { file: 'Rabbin Zaman 25.jpg', label: 'City perspective', story: '' },
+      { file: 'Rabbin Zaman 26.jpg', label: 'Between destinations', story: '' },
+      { file: 'Rabbin Zaman 27.jpg', label: 'In transit', story: '' },
+      { file: 'Rabbin Zaman 28.jpg', label: 'A passing moment', story: '' },
+      { file: 'Rabbin Zaman 29.jpg', label: 'Looking back', story: '' },
+      { file: 'Rabbin Zaman 30.jpg', label: 'The long way through', story: '' },
+      { file: 'Rabbin Zaman 31.jpg', label: 'Night light', story: '' },
+      { file: 'Rabbin Zaman 32.jpg', label: 'A different point of view', story: '' },
+      { file: 'Rabbin Zaman 33.jpg', label: 'The visual journal', story: '' },
+      { file: 'Rabbin Zaman 34.jpg', label: 'Rabbin, unframed', story: '' }
+    ];
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const canHover = window.matchMedia('(pointer: fine)').matches;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const sections = document.querySelectorAll('.hero, .chapter, .gallery-section, .bridge');
+    const navLinks = document.querySelectorAll('.chapter-nav a');
+    const progress = document.getElementById('scrollProgress');
+    const backToTop = document.getElementById('backToTop');
+    const chapterMenuToggle = document.getElementById('chapterMenuToggle');
+    const chapterNav = document.getElementById('chapterNav');
+    const heroInner = document.querySelector('.hero-inner');
+    const scrollCue = document.querySelector('.scroll-cue');
+
+    /* ---------------------------------------------------------
+       Smooth scrolling — eased wheel scrolling on mouse devices.
+       Touch devices keep native momentum scrolling.
+    --------------------------------------------------------- */
+    const smooth = { target: window.scrollY, current: window.scrollY, running: false, last: 0 };
+    const maxScroll = () => document.documentElement.scrollHeight - window.innerHeight;
+    const clampScroll = y => Math.max(0, Math.min(maxScroll(), y));
+
+    /* frame-rate independent easing: same feel at 60, 120 or 144 Hz */
+    function smoothStep(now) {
+      const dt = Math.min(64, now - smooth.last || 16.7);
+      smooth.last = now;
+      const diff = smooth.target - smooth.current;
+      if (Math.abs(diff) < 0.3) {
+        smooth.current = smooth.target;
+        window.scrollTo(0, smooth.current);
+        smooth.running = false;
+        return;
+      }
+      smooth.current += diff * (1 - Math.exp(-dt / 105));
+      window.scrollTo(0, smooth.current);
+      requestAnimationFrame(smoothStep);
+    }
+
+    function smoothTo(y) {
+      if (!canHover || reduceMotion) {
+        window.scrollTo({ top: y, behavior: reduceMotion ? 'auto' : 'smooth' });
+        return;
+      }
+      smooth.target = clampScroll(y);
+      if (!smooth.running) {
+        smooth.current = window.scrollY;
+        smooth.running = true;
+        smooth.last = performance.now();
+        requestAnimationFrame(smoothStep);
+      }
+    }
+
+    if (canHover && !reduceMotion) {
+      document.documentElement.classList.add('smooth-js');
+
+      window.addEventListener('wheel', event => {
+        if (event.ctrlKey || event.defaultPrevented) return;
+        if (document.body.classList.contains('lightbox-open') || document.body.classList.contains('menu-open')) return;
+        if (event.target instanceof Element && event.target.closest('[data-native-scroll]')) return;
+        event.preventDefault();
+        const unit = event.deltaMode === 1 ? 34 : event.deltaMode === 2 ? window.innerHeight : 1;
+        if (!smooth.running) smooth.target = window.scrollY;
+        smoothTo(smooth.target + event.deltaY * unit);
+      }, { passive: false });
+
+      /* smooth keyboard scrolling too */
+      window.addEventListener('keydown', event => {
+        if (event.altKey || event.ctrlKey || event.metaKey) return;
+        if (document.body.classList.contains('lightbox-open') || document.body.classList.contains('menu-open')) return;
+        if (event.target instanceof Element && event.target.closest('input, textarea, select, button, a, [contenteditable]')) return;
+        const page = window.innerHeight * 0.88;
+        const base = smooth.running ? smooth.target : window.scrollY;
+        const moves = {
+          ArrowDown: base + 90, ArrowUp: base - 90,
+          PageDown: base + page, PageUp: base - page,
+          ' ': base + (event.shiftKey ? -page : page),
+          Home: 0, End: maxScroll()
+        };
+        if (!(event.key in moves)) return;
+        event.preventDefault();
+        smoothTo(moves[event.key]);
+      });
+
+      /* a background tab pauses animation frames — drop any half-finished glide */
+      document.addEventListener('visibilitychange', () => {
+        smooth.running = false;
+        smooth.target = smooth.current = window.scrollY;
+      });
+
+      /* keep in sync when the page is scrolled by scrollbar drag, etc. */
+      window.addEventListener('scroll', () => {
+        if (!smooth.running) smooth.target = smooth.current = window.scrollY;
+      }, { passive: true });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', event => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        event.preventDefault();
+        smoothTo(target.getBoundingClientRect().top + window.scrollY);
+        history.replaceState(null, '', link.getAttribute('href'));
+      });
+    });
+
+    /* ---------------------------------------------------------
+       Active chapter nav highlighting + reveal on scroll
+    --------------------------------------------------------- */
+    const io = 'IntersectionObserver' in window ? new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          const id = entry.target.getAttribute('id');
+          navLinks.forEach(l => l.classList.toggle('active', l.dataset.target === id));
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '-15% 0px -55% 0px' }) : null;
+
+    if ('IntersectionObserver' in window) sections.forEach(s => io.observe(s));
+    else sections.forEach(s => s.classList.add('in'));
+
+    function updateScrollState() {
+      const y = window.scrollY;
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const percentage = scrollable > 0 ? (y / scrollable) * 100 : 0;
+      progress.style.transform = `scaleX(${Math.min(1, Math.max(0, percentage / 100)).toFixed(4)})`;
+      backToTop.classList.toggle('is-visible', y > window.innerHeight * 0.7);
+
+      if (!reduceMotion && y < window.innerHeight * 1.2) {
+        const fade = Math.max(0, 1 - y / (window.innerHeight * 0.85));
+        heroInner.style.transform = `translate3d(0, ${(y * 0.16).toFixed(1)}px, 0)`;
+        heroInner.style.opacity = fade.toFixed(3);
+        scrollCue.style.opacity = fade.toFixed(3);
+      }
+    }
+
+    let scrollFrame = null;
+    window.addEventListener('scroll', () => {
+      if (scrollFrame) return;
+      scrollFrame = requestAnimationFrame(() => {
+        updateScrollState();
+        scrollFrame = null;
+      });
+    }, { passive: true });
+    updateScrollState();
+
+    backToTop.addEventListener('click', () => smoothTo(0));
+
+    chapterMenuToggle.addEventListener('click', () => {
+      const isOpen = chapterNav.classList.toggle('is-open');
+      chapterMenuToggle.setAttribute('aria-expanded', String(isOpen));
+      document.body.classList.toggle('menu-open', isOpen);
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        chapterNav.classList.remove('is-open');
+        chapterMenuToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+      });
+    });
+
+    const galleryGrid = document.getElementById('galleryGrid');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxStory = document.getElementById('lightboxStory');
+    let activeImage = 0;
+
+    galleryImages.forEach((image, index) => {
+        const button = document.createElement('button');
+        button.className = `gallery-card gallery-card-${(index % 6) + 1}`;
+        button.type = 'button';
+        button.setAttribute('aria-label', `Open ${image.label}`);
+        button.innerHTML = `<img src="images/gallery/${image.file}" alt="${image.label}" loading="lazy" decoding="async"><span class="gallery-index">${String(index + 1).padStart(2, '0')}</span>`;
+        button.addEventListener('click', () => openLightbox(index));
+      galleryGrid.appendChild(button);
+    });
+
+    function openLightbox(index) {
+        activeImage = (index + galleryImages.length) % galleryImages.length;
+        lightboxImage.src = `images/gallery/${galleryImages[activeImage].file}`;
+        lightboxImage.alt = galleryImages[activeImage].label;
+        lightboxCaption.textContent = `${galleryImages[activeImage].label} · ${String(activeImage + 1).padStart(2, '0')} / ${String(galleryImages.length).padStart(2, '0')}`;
+        lightboxStory.textContent = galleryImages[activeImage].story;
+        lightboxStory.hidden = !galleryImages[activeImage].story.trim();
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('lightbox-open');
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('lightbox-open');
+    }
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    document.getElementById('lightboxPrev').addEventListener('click', () => openLightbox(activeImage - 1));
+    document.getElementById('lightboxNext').addEventListener('click', () => openLightbox(activeImage + 1));
+    lightbox.addEventListener('click', event => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', event => {
+      if (!lightbox.classList.contains('is-open')) return;
+      if (event.key === 'Escape') closeLightbox();
+      if (event.key === 'ArrowLeft') openLightbox(activeImage - 1);
+      if (event.key === 'ArrowRight') openLightbox(activeImage + 1);
+    });
+
+    /* ---------------------------------------------------------
+       Custom cursor — smooth trailing ring + tight dot.
+       Fine pointers only; untouched on touch/coarse devices.
+    --------------------------------------------------------- */
+    if (canHover && !reduceMotion) {
+      document.body.classList.add('has-custom-cursor');
+      const ring = document.getElementById('cursorRing');
+      const dot = document.getElementById('cursorDot');
+
+      let mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
+      let ringX = mouseX, ringY = mouseY;
+
+      window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX; mouseY = e.clientY;
+        dot.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+      });
+
+      let cursorFrame = null;
+      function raf() {
+        ringX += (mouseX - ringX) * 0.18;
+        ringY += (mouseY - ringY) * 0.18;
+        ring.style.transform = `translate(${ringX}px, ${ringY}px)`;
+        cursorFrame = Math.abs(mouseX - ringX) + Math.abs(mouseY - ringY) > 0.1 ? requestAnimationFrame(raf) : null;
+      }
+      window.addEventListener('mousemove', () => { if (!cursorFrame) cursorFrame = requestAnimationFrame(raf); }, { passive: true });
+
+      const hoverTargets = 'a, button, .tag-list li, .record-list li';
+      document.querySelectorAll(hoverTargets).forEach(el => {
+        el.addEventListener('mouseenter', () => document.body.classList.add('cursor-active'));
+        el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-active'));
+      });
+
+      document.addEventListener('mousedown', () => document.body.classList.add('cursor-down'));
+      document.addEventListener('mouseup', () => document.body.classList.remove('cursor-down'));
+    }
+
+    /* ---------------------------------------------------------
+       Subtle 3D tilt on chapter images, driven by cursor position.
+    --------------------------------------------------------- */
+    if (canHover && !reduceMotion) {
+      document.querySelectorAll('.chapter-media.tilt').forEach(card => {
+        const frame = card.querySelector('.media-frame');
+        if (!frame) return;
+        let raf = null;
+
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const px = (e.clientX - rect.left) / rect.width - 0.5;
+          const py = (e.clientY - rect.top) / rect.height - 0.5;
+          if (raf) cancelAnimationFrame(raf);
+          raf = requestAnimationFrame(() => {
+            frame.style.transform = `perspective(900px) rotateY(${px * 7}deg) rotateX(${-py * 7}deg) translateZ(0)`;
+          });
+        });
+
+        card.addEventListener('mouseleave', () => {
+          if (raf) cancelAnimationFrame(raf);
+          frame.style.transform = 'perspective(900px) rotateY(0deg) rotateX(0deg)';
+        });
+      });
+
+      /* gentle parallax on the hero photo */
+      const heroWrap = document.getElementById('heroPhotoWrap');
+      if (heroWrap) {
+        window.addEventListener('mousemove', (e) => {
+          const px = (e.clientX / window.innerWidth - 0.5);
+          const py = (e.clientY / window.innerHeight - 0.5);
+          heroWrap.style.transform = `translate3d(${px * -14}px, ${py * -10}px, 0) scale(1.06)`;
+        });
+      }
+    }
+
+    /* ---------------------------------------------------------
+       Gyro — always on. Photos drift with the tilt of the device.
+       Android starts immediately; iOS asks for motion permission on
+       the visitor's first tap (the browser requires a gesture), after
+       which it stays on with no button needed.
+    --------------------------------------------------------- */
+    const orientation = window.DeviceOrientationEvent;
+    const requiresMotionPermission = orientation && typeof orientation.requestPermission === 'function';
+
+    if (orientation && !reduceMotion && 'IntersectionObserver' in window) {
+      const photos = [...document.querySelectorAll('img:not(#lightboxImage)')];
+      const visiblePhotos = new Set();
+      const photoDepth = new Map();
+      const LIMIT = 30;
+      let baseBeta = null;
+      let baseGamma = null;
+      let targetBeta = 0;
+      let targetGamma = 0;
+      let currentBeta = 0;
+      let currentGamma = 0;
+      let animationFrame = null;
+      let previousFrameTime = 0;
+      let started = false;
+
+      photos.forEach((photo, index) => {
+        photoDepth.set(photo, 0.75 + (index % 4) * 0.12);
+      });
+      /* the zoom headroom is only added once real sensor data arrives, so
+         desktops and devices without a gyro never crop their photos */
+      let gyroActive = false;
+
+      const updatePhotoPosition = photo => {
+        const depth = photoDepth.get(photo);
+        photo.style.setProperty('--gyro-x', `${(currentGamma / LIMIT * 5 * depth).toFixed(2)}%`);
+        photo.style.setProperty('--gyro-y', `${(currentBeta / LIMIT * 4 * depth).toFixed(2)}%`);
+        photo.style.setProperty('--gyro-rotate', `${(currentGamma / LIMIT * 1.6 * depth).toFixed(2)}deg`);
+      };
+
+      const photoObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            visiblePhotos.add(entry.target);
+            updatePhotoPosition(entry.target);
+          } else visiblePhotos.delete(entry.target);
+        });
+      });
+      photos.forEach(photo => photoObserver.observe(photo));
+
+      const angleDifference = (value, base) => ((value - base + 540) % 360) - 180;
+      const animatePhotos = timestamp => {
+        const elapsed = previousFrameTime ? timestamp - previousFrameTime : 16.67;
+        previousFrameTime = timestamp;
+        const smoothing = 1 - Math.exp(-elapsed / 60);
+        currentBeta += (targetBeta - currentBeta) * smoothing;
+        currentGamma += (targetGamma - currentGamma) * smoothing;
+
+        visiblePhotos.forEach(updatePhotoPosition);
+
+        if (Math.abs(targetBeta - currentBeta) > 0.01 || Math.abs(targetGamma - currentGamma) > 0.01) {
+          animationFrame = requestAnimationFrame(animatePhotos);
+        } else {
+          animationFrame = null;
+          previousFrameTime = 0;
+        }
+      };
+
+      const handleOrientation = event => {
+        if (event.beta === null || event.gamma === null) return;
+        if (!gyroActive) {
+          gyroActive = true;
+          photos.forEach(photo => photo.classList.add('gyro-photo'));
+        }
+        if (baseBeta === null || baseGamma === null) {
+          baseBeta = event.beta;
+          baseGamma = event.gamma;
+        }
+        /* slowly re-centre so it keeps working however the phone is held */
+        baseBeta += angleDifference(event.beta, baseBeta) * 0.004;
+        baseGamma += angleDifference(event.gamma, baseGamma) * 0.004;
+
+        targetBeta = Math.max(-LIMIT, Math.min(LIMIT, angleDifference(event.beta, baseBeta)));
+        targetGamma = Math.max(-LIMIT, Math.min(LIMIT, angleDifference(event.gamma, baseGamma)));
+        if (animationFrame === null) animationFrame = requestAnimationFrame(animatePhotos);
+      };
+
+      const startGyro = () => {
+        if (started) return;
+        started = true;
+        window.addEventListener('deviceorientation', handleOrientation, { passive: true });
+      };
+
+      /* listen right away: Android and desktop Chrome need no permission, and on iOS
+         the listener simply stays silent until the permission prompt is accepted */
+      startGyro();
+
+      if (requiresMotionPermission) {
+        const askPermission = async () => {
+          try {
+            await orientation.requestPermission();
+          } catch (error) {
+            /* permission unavailable — the page simply stays static */
+          }
+        };
+        ['touchend', 'click'].forEach(type => document.addEventListener(type, askPermission, { once: true, passive: true }));
+      }
+    }
+  </script>
+
+</body>
+</html>

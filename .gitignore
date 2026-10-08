@@ -1,0 +1,6 @@
+# only the website is published; keep personal config out
+.*
+!.gitignore
+!.nojekyll
+*.bak
+script.new.html
